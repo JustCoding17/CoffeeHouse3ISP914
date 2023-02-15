@@ -19,8 +19,7 @@
     
   <b> Работа окон <b>
     
-   ![image](https://user-images.githubusercontent.com/116340796/218982548-2c9fcb0b-6fe5-4446-a3df-b87ad659d61f.png)
-
-  ![image](https://user-images.githubusercontent.com/116340796/218980961-8f1be757-b2fd-4989-820c-2a8f1358c6cc.png)
-
   
+![image](https://user-images.githubusercontent.com/116340796/218982851-0cebbc7f-956d-48ca-a3f4-480dd4cfcf33.png)
+![image](https://user-images.githubusercontent.com/116340796/218983138-81ab2bdd-9b19-4b84-a858-08c0f6655360.png)
+![image](https://user-images.githubusercontent.com/116340796/218983256-217d750c-2eaf-452d-aa56-c830360a871c.png)
