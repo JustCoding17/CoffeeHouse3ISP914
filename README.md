@@ -11,7 +11,7 @@
 ![image](https://user-images.githubusercontent.com/116340796/218979785-aec39759-ad9d-4302-befd-3e3e83b2648c.png)
 ![image](https://user-images.githubusercontent.com/116340796/218980262-e7f0f0e0-dce9-4ab1-a14d-dab9972a07da.png)
   <b> Подключенная база данных<b>
-  ![image](https://user-images.githubusercontent.com/116340796/218980743-5e125ae7-e3c3-4c65-b43f-def7ec3a1761.png)
+ 
   <b> Работа окон <b>
   ![image](https://user-images.githubusercontent.com/116340796/218980961-8f1be757-b2fd-4989-820c-2a8f1358c6cc.png)
 
