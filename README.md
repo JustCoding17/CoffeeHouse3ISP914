@@ -10,6 +10,7 @@
   <b> Окно 'Авторизация' и 'Регистрация'<b>
   ![image](https://user-images.githubusercontent.com/116340796/218979442-c90fa288-ceb0-47f4-9ff2-362c9ad47f53.png)
 ![image](https://user-images.githubusercontent.com/116340796/218979785-aec39759-ad9d-4302-befd-3e3e83b2648c.png)
+![image](https://user-images.githubusercontent.com/116340796/218981997-9fb808bd-676f-40fe-a367-f865caf69804.png)
 
     
     
