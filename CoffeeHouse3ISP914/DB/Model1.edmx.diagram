@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9d9c88fedeaf4106a2d343437a85934b" Name="Diagram1">
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Category" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Client" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Employee" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Gender" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Position" Width="1.5" PointX="3.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Product" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.ProductSale" Width="1.5" PointX="7.5" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Sale" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="9.125" IsExpanded="true" />
+        <AssociationConnector Association="CoffeeShop3ISP914Model.FK_Product_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="CoffeeShop3ISP914Model.FK_Client_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="CoffeeShop3ISP914Model.FK_Sale_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="CoffeeShop3ISP914Model.FK_Employee_Gender" ManuallyRouted="false" />
+        <AssociationConnector Association="CoffeeShop3ISP914Model.FK_Employee_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="CoffeeShop3ISP914Model.FK_Sale_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="CoffeeShop3ISP914Model.FK_ProductSale_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="CoffeeShop3ISP914Model.FK_ProductSale_Sale" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
