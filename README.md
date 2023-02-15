@@ -19,8 +19,8 @@
     
   <b> Работа окон <b>
     
-    ![image](https://user-images.githubusercontent.com/116340796/218982359-e5d65002-f16f-4d6a-b6d2-686d0460d859.png)
-    
+   ![image](https://user-images.githubusercontent.com/116340796/218982548-2c9fcb0b-6fe5-4446-a3df-b87ad659d61f.png)
+
   ![image](https://user-images.githubusercontent.com/116340796/218980961-8f1be757-b2fd-4989-820c-2a8f1358c6cc.png)
 
   
