@@ -23,3 +23,9 @@
 ![image](https://user-images.githubusercontent.com/116340796/218982851-0cebbc7f-956d-48ca-a3f4-480dd4cfcf33.png)
 ![image](https://user-images.githubusercontent.com/116340796/218983138-81ab2bdd-9b19-4b84-a858-08c0f6655360.png)
 ![image](https://user-images.githubusercontent.com/116340796/218983256-217d750c-2eaf-452d-aa56-c830360a871c.png)
+
+
+<b> Занесение продукта в базу данных<b>
+
+![image](https://user-images.githubusercontent.com/116340796/219665369-37a4884e-7e10-4fea-ae1a-5a69ec5d4e78.png)
+![image](https://user-images.githubusercontent.com/116340796/219665382-44a2922c-b30f-4d64-bdfd-4bf0b454803e.png)
