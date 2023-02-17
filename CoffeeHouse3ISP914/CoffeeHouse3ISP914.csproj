@@ -125,23 +125,23 @@
     <Compile Include="Pages\Director\EmployeesChangePage.xaml.cs">
       <DependentUpon>EmployeesChangePage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Director\MenuChangePage.xaml.cs">
-      <DependentUpon>MenuChangePage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\Director\StatisticksPage.xaml.cs">
       <DependentUpon>StatisticksPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\Employees\SalesPage.xaml.cs">
       <DependentUpon>SalesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MenuPage.xaml.cs">
-      <DependentUpon>MenuPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Pages\PrivateOffice\OrdersHistoryPage.xaml.cs">
       <DependentUpon>OrdersHistoryPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\PrivateOffice\PersonalDataPage.xaml.cs">
       <DependentUpon>PersonalDataPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\MenuChangeWindow.xaml.cs">
+      <DependentUpon>MenuChangeWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\MenuWindow.xaml.cs">
+      <DependentUpon>MenuWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="Windows\PrivateOfficeWindow.xaml.cs">
       <DependentUpon>PrivateOfficeWindow.xaml</DependentUpon>
@@ -165,19 +165,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Director\MenuChangePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="Pages\Director\StatisticksPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Employees\SalesPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Pages\MenuPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -200,6 +192,14 @@
     <Compile Include="Windows\AuthorizationWindow.xaml.cs">
       <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Windows\MenuChangeWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\MenuWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\PrivateOfficeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -243,22 +243,23 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Resources\Picture\LogoMainMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="DB\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="DB\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-    <Resource Include="Resources\Picture\LogoMainMain.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

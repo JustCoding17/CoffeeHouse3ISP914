@@ -10,19 +10,25 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CoffeeHouse3ISP914.Pages
+namespace CoffeeHouse3ISP914.Windows
 {
     /// <summary>
-    /// Логика взаимодействия для MenuPage.xaml
+    /// Логика взаимодействия для MenuWindow.xaml
     /// </summary>
-    public partial class MenuPage : Page
+    public partial class MenuWindow : Window
     {
-        public MenuPage()
+        public MenuWindow()
         {
             InitializeComponent();
+        }
+
+        private void AddPRoduct_Click(object sender, RoutedEventArgs e)
+        {
+            MenuChangeWindow menuChangeWindow = new MenuChangeWindow();
+            menuChangeWindow.Show();
+            this.Close();
         }
     }
 }

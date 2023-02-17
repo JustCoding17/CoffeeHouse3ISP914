@@ -31,8 +31,8 @@ namespace CoffeeHouse3ISP914.Windows
                 .Where(i => i.Login == TbLogin.Text && i.Password == PbPassword.Password).FirstOrDefault();
             if (authUser != null)
             {
-                PrivateOfficeWindow privateOfficeWindow = new PrivateOfficeWindow();
-                privateOfficeWindow.Show();
+                MenuWindow menuWindow = new MenuWindow();
+                menuWindow.Show();
                 this.Close();
             }
             else

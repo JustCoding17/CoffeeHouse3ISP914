@@ -4,16 +4,16 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9d9c88fedeaf4106a2d343437a85934b" Name="Diagram1">
+      <Diagram DiagramId="aa1446bf2f704e1f8a5427de4bea9e12" Name="Diagram1">
         <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Category" Width="1.5" PointX="3" PointY="9.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Client" Width="1.5" PointX="3" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Client" Width="1.5" PointX="3" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Employee" Width="1.5" PointX="6" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Gender" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
         <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Position" Width="1.5" PointX="3.75" PointY="1.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Product" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Product" Width="1.5" PointX="5.25" PointY="9.125" IsExpanded="true" />
         <EntityTypeShape EntityType="CoffeeShop3ISP914Model.ProductSale" Width="1.5" PointX="7.5" PointY="5.375" IsExpanded="true" />
         <EntityTypeShape EntityType="CoffeeShop3ISP914Model.Sale" Width="1.5" PointX="5.25" PointY="5.375" IsExpanded="true" />
-        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="9.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.sysdiagrams" Width="1.5" PointX="7.75" PointY="8.25" IsExpanded="true" />
         <AssociationConnector Association="CoffeeShop3ISP914Model.FK_Product_Category" ManuallyRouted="false" />
         <AssociationConnector Association="CoffeeShop3ISP914Model.FK_Client_Gender" ManuallyRouted="false" />
         <AssociationConnector Association="CoffeeShop3ISP914Model.FK_Sale_Client" ManuallyRouted="false" />

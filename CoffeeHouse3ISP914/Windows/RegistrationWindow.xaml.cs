@@ -66,8 +66,8 @@ namespace CoffeeHouse3ISP914.Windows
             Context.Client.Add(client);
             Context.SaveChanges();
 
-            PrivateOfficeWindow privateOfficeWindow = new PrivateOfficeWindow();
-            privateOfficeWindow.Show();
+            MenuWindow menuWindow = new MenuWindow();
+            menuWindow.Show();
             this.Close();
         }
 
