@@ -31,6 +31,7 @@ namespace CoffeeHouse3ISP914.Windows
         public MenuChangeWindow()
         {
             InitializeComponent();
+            //Заполнение выпадающего списка "Категория"
             CMBTypeProduct.ItemsSource = Context.Category.ToList();
             CMBTypeProduct.SelectedIndex = 0;
             CMBTypeProduct.DisplayMemberPath = "Title";
@@ -38,6 +39,31 @@ namespace CoffeeHouse3ISP914.Windows
         }
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
+            //Проверка на пустые поля при добавлении
+            if (string.IsNullOrWhiteSpace(TbNameProduct.Text) ||
+                string.IsNullOrWhiteSpace(CMBTypeProduct.Text) ||
+                string.IsNullOrWhiteSpace(TbPrice.Text))
+            {
+                MessageBox.Show("Не все поля заполнены!", "Ошибка");
+                return;
+            }
+
+            //Проверка на существующий продукт
+            var titleProd = Context.Product.ToList()
+                .Where(i => i.Title == TbNameProduct.Text).FirstOrDefault();
+            if (titleProd != null)
+            {
+                MessageBox.Show("Такой продукт уже существует", "Ошибка");
+                return;
+            }
+            //Проверка на цифры в цене
+            bool result = Int64.TryParse(TbPrice.Text, out var number);
+            if (result != true)
+            {
+                MessageBox.Show("Цена должна быть заполнена числами!", "Ошибка");
+                return;
+            }
+            //Заполнение экземпляра класса данными
             Product product = new Product();
             product.Title = TbNameProduct.Text;
             product.Description = TbDisc.Text;
@@ -45,19 +71,16 @@ namespace CoffeeHouse3ISP914.Windows
             product.IdCategory = (CMBTypeProduct.SelectedItem as Category).IdCategory;
             if (pathPhoto != null)
             {
-                product.PhotoPath = pathPhoto;
+                product.PhotoPath = File.ReadAllBytes(pathPhoto);
             }
             Context.Product.Add(product);
             Context.SaveChanges();
-            MessageBox.Show("Ok");
+            MessageBox.Show("Товар успешно добавлен");
         }
 
         private void BtnChooseImage_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
-            var fileContent = string.Empty;
-            openFileDialog.InitialDirectory = "c:\\";
-
             openFileDialog.RestoreDirectory = true;
             if (openFileDialog.ShowDialog() == true)
             {

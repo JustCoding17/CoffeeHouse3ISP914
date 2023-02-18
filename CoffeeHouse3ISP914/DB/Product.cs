@@ -24,7 +24,7 @@ namespace CoffeeHouse3ISP914.DB
         public string Title { get; set; }
         public decimal Price { get; set; }
         public int IdCategory { get; set; }
-        public string PhotoPath { get; set; }
+        public byte[] PhotoPath { get; set; }
         public string Description { get; set; }
     
         public virtual Category Category { get; set; }
