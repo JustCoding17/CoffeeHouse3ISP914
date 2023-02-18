@@ -29,3 +29,10 @@
 
 ![image](https://user-images.githubusercontent.com/116340796/219665369-37a4884e-7e10-4fea-ae1a-5a69ec5d4e78.png)
 ![image](https://user-images.githubusercontent.com/116340796/219665382-44a2922c-b30f-4d64-bdfd-4bf0b454803e.png)
+
+
+<b> Проверка на пустые поля и неккоректные данные <b>
+
+![image](https://user-images.githubusercontent.com/116340796/219852079-18b2efcc-c8bb-44d3-822a-f0fb2e79c01d.png)
+![image](https://user-images.githubusercontent.com/116340796/219852127-d9056852-3133-49f3-9e7b-7038e37e1dbc.png)
+![image](https://user-images.githubusercontent.com/116340796/219852216-efb707cf-de99-402e-8b27-9c548941e5e6.png)
