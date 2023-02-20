@@ -82,6 +82,7 @@ namespace CoffeeHouse3ISP914.Windows
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
             openFileDialog.RestoreDirectory = true;
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png";
             if (openFileDialog.ShowDialog() == true)
             {
                 ImgProduct.Source = new BitmapImage(new Uri(openFileDialog.FileName));

@@ -5,11 +5,80 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CoffeeHouse3ISP914.Windows"
         mc:Ignorable="d"
-        Title="MenuWindow" Height="450" Width="800"
+        Title="MenuWindow" Height="800" Width="1200"
         WindowStartupLocation="CenterScreen">
     <Grid>
-        <Button x:Name="AddPRoduct"
-                Click="AddPRoduct_Click"
+        <Grid.Background>
+            <RadialGradientBrush RadiusX="0.9" RadiusY="0.9">
+                <GradientStop Color="#FFDBD1BB"/>
+                <GradientStop Color="#FF978A73" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Меню"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="36"
+                   FontWeight="Medium"
+                   Margin="0 10 0 0"
             />
+
+        <ListView x:Name="LvProductList" 
+                  Grid.Row="2" 
+                  d:ItemsSource="{d:SampleData ItemCount=7}"
+                  ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListView.Background>
+                <RadialGradientBrush RadiusX="0.9" RadiusY="0.9">
+                    <GradientStop Color="#FFDBD1BB"/>
+                    <GradientStop Color="#FF978A73" Offset="1"/>
+                </RadialGradientBrush>
+            </ListView.Background>
+
+            <ListView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel/>
+                </ItemsPanelTemplate>
+            </ListView.ItemsPanel>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="#FF978A73"
+                            BorderThickness="1"
+                            Margin="5"
+                            Width="200"
+                            Height="320">
+                        <StackPanel>
+                            <Image Height="240"
+                                   Width="200">
+                                <Image.Source>
+                                    <Binding Path="PhotoPath">
+                                        <Binding.TargetNullValue>
+                                            <ImageSource>/Resources/Picture/notImage.png</ImageSource>
+                                        </Binding.TargetNullValue>
+                                    </Binding>
+                                </Image.Source>
+                            </Image>
+                            <TextBlock Text="{Binding Title}"
+                                       FontSize="18"
+                                       FontWeight="Bold"
+                                       Margin="5 0 0 0"
+                                       TextWrapping="Wrap"/>
+
+                            <TextBlock Text="{Binding Price}"
+                                       FontSize="18"
+                                       FontWeight="Light"
+                                       Margin="10 0 0 0"/>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
     </Grid>
 </Window>

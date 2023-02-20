@@ -12,6 +12,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using CoffeeHouse3ISP914.ClassHelper;
+using CoffeeHouse3ISP914.DB;
+using static CoffeeHouse3ISP914.ClassHelper.EFClass;
+
 namespace CoffeeHouse3ISP914.Windows
 {
     /// <summary>
@@ -22,13 +26,14 @@ namespace CoffeeHouse3ISP914.Windows
         public MenuWindow()
         {
             InitializeComponent();
-        }
 
-        private void AddPRoduct_Click(object sender, RoutedEventArgs e)
+            GetProduct();
+        }
+        private void GetProduct()
         {
-            MenuChangeWindow menuChangeWindow = new MenuChangeWindow();
-            menuChangeWindow.Show();
-            this.Close();
+            List<Product> productsList = new List<Product>();
+            productsList = Context.Product.ToList();
+            LvProductList.ItemsSource = productsList;
         }
     }
 }
