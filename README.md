@@ -36,3 +36,8 @@
 ![image](https://user-images.githubusercontent.com/116340796/219852079-18b2efcc-c8bb-44d3-822a-f0fb2e79c01d.png)
 ![image](https://user-images.githubusercontent.com/116340796/219852127-d9056852-3133-49f3-9e7b-7038e37e1dbc.png)
 ![image](https://user-images.githubusercontent.com/116340796/219852216-efb707cf-de99-402e-8b27-9c548941e5e6.png)
+
+<b> Меню <b>
+
+![image](https://user-images.githubusercontent.com/116340796/220129059-708404ed-8b0f-4e28-9ed7-212f4f9abbfc.png)
+
