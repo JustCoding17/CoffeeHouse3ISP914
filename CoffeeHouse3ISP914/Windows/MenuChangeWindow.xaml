@@ -111,7 +111,6 @@
                      HorizontalAlignment="Left"
                      Height="40"
                      Style="{StaticResource tbStyle}"/>
-
         </StackPanel>
     </Grid>
 </Window>
