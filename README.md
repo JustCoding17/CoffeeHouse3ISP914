@@ -41,3 +41,20 @@
 
 ![image](https://user-images.githubusercontent.com/116340796/220129059-708404ed-8b0f-4e28-9ed7-212f4f9abbfc.png)
 
+<b> Обновлённая авторизация <b>
+
+![image](https://user-images.githubusercontent.com/116340796/230559297-9d520a77-c1db-44dc-96e4-c7d80fcbaf7a.png)
+![image](https://user-images.githubusercontent.com/116340796/230559351-e7d5714d-4732-4a7e-98a5-969b22a31d55.png)
+
+<b> Кнопка добавления <b>
+![image](https://user-images.githubusercontent.com/116340796/230559484-c7894296-3692-4277-b1c9-defb2fa909f2.png)
+
+<b> Отсутствие кнопки добавления, если работник не директор <b>
+
+![image](https://user-images.githubusercontent.com/116340796/230559639-e2cbdb63-8a4e-4bba-ab58-14c6bf03e658.png)
+![image](https://user-images.githubusercontent.com/116340796/230559668-12fb11b8-ca82-407f-b4e0-7c8c5b445efd.png)
+![image](https://user-images.githubusercontent.com/116340796/230559692-123730fa-1378-4518-8f4b-b478cab23379.png)
+
+
+
+
