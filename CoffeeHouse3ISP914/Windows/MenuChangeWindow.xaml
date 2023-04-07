@@ -98,7 +98,7 @@
                      Height="40"
                      FontSize="18"
                      VerticalContentAlignment="Center"/>
-            
+
             <TextBlock Height="50"
                        Text="Введите стоимость товара"
                        FontSize="20"
@@ -111,9 +111,6 @@
                      HorizontalAlignment="Left"
                      Height="40"
                      Style="{StaticResource tbStyle}"/>
-
         </StackPanel>
-        
-
     </Grid>
 </Window>
