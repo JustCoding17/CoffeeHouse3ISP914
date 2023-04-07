@@ -23,7 +23,7 @@ namespace CoffeeHouse3ISP914.DB
         public int IdPosition { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public decimal Salary { get; set; }
+        public Nullable<decimal> Salary { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Employee> Employee { get; set; }

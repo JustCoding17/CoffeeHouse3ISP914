@@ -27,12 +27,13 @@ namespace CoffeeHouse3ISP914.Windows
 
         private void BtnSignIn_Click(object sender, RoutedEventArgs e)
         {
-            var authUser = Context.Client.ToList()
+            var authEmployee = Context.Employee.ToList()
                 .Where(i => i.Login == TbLogin.Text && i.Password == PbPassword.Password).FirstOrDefault();
-            if (authUser != null)
+            if (authEmployee != null)
             {
-                MenuWindow menuWindow = new MenuWindow();
-                menuWindow.Show();
+                ClassHelper.EmployeeDataClass.Employee = authEmployee;
+                NavigateWindow navigateWindow = new NavigateWindow();
+                navigateWindow.Show();
                 this.Close();
             }
             else

@@ -26,7 +26,10 @@ namespace CoffeeHouse3ISP914.Windows
         public MenuWindow()
         {
             InitializeComponent();
-
+            if (EmployeeDataClass.Employee.IdPosition != 1)
+            {
+                btnAddEdit.Visibility = Visibility.Collapsed;
+            }
             GetProduct();
         }
         private void GetProduct()
@@ -34,6 +37,21 @@ namespace CoffeeHouse3ISP914.Windows
             List<Product> productsList = new List<Product>();
             productsList = Context.Product.ToList();
             LvProductList.ItemsSource = productsList;
+        }
+
+        private void btnAddEdit_Click(object sender, RoutedEventArgs e)
+        {
+            MenuChangeWindow menuChangeWindow = new MenuChangeWindow();
+            this.Hide();
+            menuChangeWindow.ShowDialog();
+            this.Show();
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            NavigateWindow navigateWindow = new NavigateWindow();
+            navigateWindow.Show();
+            this.Close();
         }
     }
 }
