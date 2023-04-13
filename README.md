@@ -60,6 +60,15 @@
 ![image](https://user-images.githubusercontent.com/116340796/231679692-12b5a09b-12c8-4565-a01f-97d2c832d8dc.png)
 ![image](https://user-images.githubusercontent.com/116340796/231679748-4f9469da-a5d5-4ecd-9ae4-305a4ee3cc65.png)
 
+<b> Добавление и изменение сотрудника <b>
+
+![image](https://user-images.githubusercontent.com/116340796/231768487-58982803-3f43-40aa-9f52-d7c180a2987e.png)
+![image](https://user-images.githubusercontent.com/116340796/231768890-52eed330-7728-49d4-be0d-ee04e162565f.png)
+![image](https://user-images.githubusercontent.com/116340796/231768939-f316a31b-ce50-4775-ac15-6a18f9c94195.png)
+![image](https://user-images.githubusercontent.com/116340796/231769034-7c75de71-4c7f-4f32-9b21-024d8d496fde.png)
+![image](https://user-images.githubusercontent.com/116340796/231769240-b7f702b9-0fb8-4d34-b2ee-7c1932299eee.png)
+![image](https://user-images.githubusercontent.com/116340796/231769287-484f3ab9-7fc7-4415-8326-921178d34874.png)
+
 
 
 
