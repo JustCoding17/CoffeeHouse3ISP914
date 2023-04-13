@@ -27,6 +27,8 @@ namespace CoffeeHouse3ISP914.Windows
     /// </summary>
     public partial class MenuChangeWindow : Window
     {
+        private bool isMenuChange = false;
+        private Product editproduct;
         private string pathPhoto = null;
         public MenuChangeWindow()
         {
@@ -36,6 +38,10 @@ namespace CoffeeHouse3ISP914.Windows
             CMBTypeProduct.SelectedIndex = 0;
             CMBTypeProduct.DisplayMemberPath = "Title";
 
+        }
+        public MenuChangeWindow(Product product)
+        {
+            InitializeComponent();
         }
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {

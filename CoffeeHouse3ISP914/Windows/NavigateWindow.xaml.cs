@@ -50,5 +50,16 @@ namespace CoffeeHouse3ISP914.Windows
             employeeListWindow.Show();
             this.Close();
         }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            var DialogResult = MessageBox.Show("Вы уверены, что хотите выйти?", "Внимание!", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (DialogResult == MessageBoxResult.Yes)
+            {
+                AutorizationWindow autorizationWindow = new AutorizationWindow();
+                autorizationWindow.Show();
+                this.Close();
+            }
+        }
     }
 }

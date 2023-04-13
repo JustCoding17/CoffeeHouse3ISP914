@@ -28,7 +28,8 @@ namespace CoffeeHouse3ISP914.Windows
             InitializeComponent();
             if (EmployeeDataClass.Employee.IdPosition != 1)
             {
-                btnAddEdit.Visibility = Visibility.Collapsed;
+                btnAdd.Visibility = Visibility.Collapsed;
+                btnEdit.Visibility = Visibility.Collapsed;
             }
             GetEmployee();
         }
@@ -47,9 +48,26 @@ namespace CoffeeHouse3ISP914.Windows
             this.Close();
         }
 
-        private void btnAddEdit_Click(object sender, RoutedEventArgs e)
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
+                EmployeeChangeWindow employeeChangeWindow = new EmployeeChangeWindow();
+                employeeChangeWindow.Show();
+                this.Close();
+        }
 
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            if (LvEmployeeList.SelectedItem is Employee)
+            {
+                var employee = LvEmployeeList.SelectedItem as Employee;
+                EmployeeChangeWindow employeeChangeWindowEdit = new EmployeeChangeWindow(employee);
+                employeeChangeWindowEdit.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Выберите запись, которую нужно изменить!", "Внимание!", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
     }
 }

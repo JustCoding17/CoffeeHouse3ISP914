@@ -28,19 +28,30 @@
             <Button x:Name="btnMenu"
                     Style="{StaticResource btnStyle}"
                     Margin="5"
-                    Content="Меню" Click="btnMenu_Click"
+                    Content="Меню" Click="btnMenu_Click" 
+                    Width="180"
                 />
             <Button x:Name="btnEmployee"
                     Style="{StaticResource btnStyle}"
                     Margin="5"
                     Content="Сотрудники"
                     Click ="btnEmployee_Click"
+                    Width="180"
                 />
             <Button x:Name="btnClient"
                     Style="{StaticResource btnStyle}"
                     Margin="5"
                     Content="Клиенты"
                     Click ="btnClient_Click"
+                    Width="180"
+                />
+
+            <Button x:Name="btnExit"
+                    Style="{StaticResource btnStyle}"
+                    Margin="0 25 0 0"
+                    Content="Выход"
+                    Click = "btnExit_Click"
+                    Width="180"
                 />
         </StackPanel>
     </Grid>

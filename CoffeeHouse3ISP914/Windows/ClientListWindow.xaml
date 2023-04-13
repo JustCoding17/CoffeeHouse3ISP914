@@ -103,7 +103,7 @@
                 Background="{x:Null}"
                 BorderThickness="0"
                 Click ="btnAddEdit_Click">
-            <Image Source="/Resources/Picture/icons8-add-80.png"/>
+            <Image Source="/Resources/Picture/add.png"/>
         </Button>
         <Button x:Name="btnExit"
                 Grid.Row="3"

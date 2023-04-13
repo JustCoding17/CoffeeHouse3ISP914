@@ -141,6 +141,9 @@
     <Compile Include="Windows\ClientListWindow.xaml.cs">
       <DependentUpon>ClientListWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\EmployeeChangeWindow.xaml.cs">
+      <DependentUpon>EmployeeChangeWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\EmployeeListWindow.xaml.cs">
       <DependentUpon>EmployeeListWindow.xaml</DependentUpon>
     </Compile>
@@ -203,6 +206,10 @@
       <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
     </Compile>
     <Page Include="Windows\ClientListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\EmployeeChangeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -282,10 +289,11 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\Picture\edit.png" />
+    <Resource Include="Resources\Picture\back.png" />
+    <Resource Include="Resources\Picture\add.png" />
     <Resource Include="Resources\Picture\home.png" />
-    <Resource Include="Resources\Picture\icons8-add-80.png" />
     <Resource Include="Resources\Picture\notImage.png" />
-    <Resource Include="Resources\Picture\noImage.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

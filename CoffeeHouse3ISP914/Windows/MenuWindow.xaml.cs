@@ -28,7 +28,8 @@ namespace CoffeeHouse3ISP914.Windows
             InitializeComponent();
             if (EmployeeDataClass.Employee.IdPosition != 1)
             {
-                btnAddEdit.Visibility = Visibility.Collapsed;
+                btnAdd.Visibility = Visibility.Collapsed;
+                btnEdit.Visibility = Visibility.Collapsed;
             }
             GetProduct();
         }
@@ -52,6 +53,21 @@ namespace CoffeeHouse3ISP914.Windows
             NavigateWindow navigateWindow = new NavigateWindow();
             navigateWindow.Show();
             this.Close();
+        }
+
+        private void btnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            if (LvProductList.SelectedItem is Product)
+            {
+                var product = LvProductList.SelectedItem as Product;
+                MenuChangeWindow menuChangeWindow = new MenuChangeWindow(product);
+                menuChangeWindow.Show();
+                this.Close();
+            }
+            else
+            {
+                MessageBox.Show("Выберите запись, которую нужно изменить!", "Внимание!", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
     }
 }

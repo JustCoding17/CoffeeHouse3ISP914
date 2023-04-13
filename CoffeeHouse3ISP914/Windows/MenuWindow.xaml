@@ -80,7 +80,7 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Button x:Name="btnAddEdit"
+        <Button x:Name="btnAdd"
                 Grid.Row="3"
                 Height="50"
                 Width="50"
@@ -89,7 +89,18 @@
                 Background="{x:Null}"
                 BorderThickness="0"
                 Click="btnAddEdit_Click">
-            <Image Source="/Resources/Picture/icons8-add-80.png"/>
+            <Image Source="/Resources/Picture/add.png"/>
+        </Button>
+        <Button x:Name="btnEdit"
+                Grid.Row="3"
+                Height="50"
+                Width="50"
+                HorizontalAlignment="Right"
+                Margin="0 0 60 0"
+                Background="{x:Null}"
+                BorderThickness="0"
+                Click = "btnEdit_Click">
+            <Image Source="/Resources/Picture/edit.png"/>
         </Button>
         <Button x:Name="btnExit"
                 Grid.Row="3"
