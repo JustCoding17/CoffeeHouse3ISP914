@@ -55,6 +55,12 @@
 ![image](https://user-images.githubusercontent.com/116340796/230559668-12fb11b8-ca82-407f-b4e0-7c8c5b445efd.png)
 ![image](https://user-images.githubusercontent.com/116340796/230559692-123730fa-1378-4518-8f4b-b478cab23379.png)
 
+<b> Список клиентов и сотрудников <b>
+
+![image](https://user-images.githubusercontent.com/116340796/231679692-12b5a09b-12c8-4565-a01f-97d2c832d8dc.png)
+![image](https://user-images.githubusercontent.com/116340796/231679748-4f9469da-a5d5-4ecd-9ae4-305a4ee3cc65.png)
+
+
 
 
 
