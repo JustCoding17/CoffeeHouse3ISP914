@@ -138,6 +138,12 @@
     <Compile Include="Pages\PrivateOffice\PersonalDataPage.xaml.cs">
       <DependentUpon>PersonalDataPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\ClientListWindow.xaml.cs">
+      <DependentUpon>ClientListWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Windows\EmployeeListWindow.xaml.cs">
+      <DependentUpon>EmployeeListWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\MenuChangeWindow.xaml.cs">
       <DependentUpon>MenuChangeWindow.xaml</DependentUpon>
     </Compile>
@@ -196,6 +202,14 @@
     <Compile Include="Windows\AuthorizationWindow.xaml.cs">
       <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Windows\ClientListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Windows\EmployeeListWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\MenuChangeWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

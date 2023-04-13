@@ -27,7 +27,20 @@
                     VerticalAlignment="Center">
             <Button x:Name="btnMenu"
                     Style="{StaticResource btnStyle}"
+                    Margin="5"
                     Content="Меню" Click="btnMenu_Click"
+                />
+            <Button x:Name="btnEmployee"
+                    Style="{StaticResource btnStyle}"
+                    Margin="5"
+                    Content="Сотрудники"
+                    Click ="btnEmployee_Click"
+                />
+            <Button x:Name="btnClient"
+                    Style="{StaticResource btnStyle}"
+                    Margin="5"
+                    Content="Клиенты"
+                    Click ="btnClient_Click"
                 />
         </StackPanel>
     </Grid>

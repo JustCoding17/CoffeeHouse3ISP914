@@ -36,5 +36,19 @@ namespace CoffeeHouse3ISP914.Windows
             menuWindow.Show();
             this.Close();
         }
+
+        private void btnClient_Click(object sender, RoutedEventArgs e)
+        {
+            ClientListWindow clientListWindow = new ClientListWindow();
+            clientListWindow.Show();
+            this.Close();
+        }
+
+        private void btnEmployee_Click(object sender, RoutedEventArgs e)
+        {
+            EmployeeListWindow employeeListWindow = new EmployeeListWindow();
+            employeeListWindow.Show();
+            this.Close();
+        }
     }
 }
