@@ -69,5 +69,41 @@ namespace CoffeeHouse3ISP914.Windows
                 MessageBox.Show("Выберите запись, которую нужно изменить!", "Внимание!", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
+
+        private void btnCart_Click(object sender, RoutedEventArgs e)
+        {
+            CartWindow cartWindow = new CartWindow();
+            this.Hide();
+            cartWindow.ShowDialog();
+            this.Show();
+        }
+
+        private void btnAddtoCart_Click(object sender, RoutedEventArgs e)
+        {
+            Button button = sender as Button;
+            bool seek = true;
+            if (button == null)
+            {
+                return;
+            }
+
+            var selectedProduct = button.DataContext as Product;
+            if (selectedProduct != null)
+            {
+                for (int i = 0; i < CartClass.Products.Count; i++)
+                {
+                    if (CartClass.Products[i] == selectedProduct)
+                    {
+                        CartClass.Products[i].Quantity++;
+                        seek = false;
+                    }
+                }
+                if (seek)
+                {
+                    CartClass.Products.Add(selectedProduct);
+                }
+            }
+        }
+
     }
 }

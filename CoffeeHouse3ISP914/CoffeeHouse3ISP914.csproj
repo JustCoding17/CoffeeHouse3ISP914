@@ -64,6 +64,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassHelper\CartClass.cs" />
+    <Compile Include="ClassHelper\Product.cs" />
     <Compile Include="ClassHelper\EFClass.cs" />
     <Compile Include="ClassHelper\EmployeeDataClass.cs" />
     <Compile Include="DB\Category.cs">
@@ -138,6 +140,9 @@
     <Compile Include="Pages\PrivateOffice\PersonalDataPage.xaml.cs">
       <DependentUpon>PersonalDataPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Windows\CartWindow.xaml.cs">
+      <DependentUpon>CartWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Windows\ClientListWindow.xaml.cs">
       <DependentUpon>ClientListWindow.xaml</DependentUpon>
     </Compile>
@@ -205,6 +210,10 @@
     <Compile Include="Windows\AuthorizationWindow.xaml.cs">
       <DependentUpon>AuthorizationWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="Windows\CartWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Windows\ClientListWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -289,6 +298,8 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <Resource Include="Resources\Picture\remove.png" />
+    <Resource Include="Resources\Picture\cart.png" />
     <Resource Include="Resources\Picture\edit.png" />
     <Resource Include="Resources\Picture\back.png" />
     <Resource Include="Resources\Picture\add.png" />
