@@ -69,6 +69,16 @@
 ![image](https://user-images.githubusercontent.com/116340796/231769240-b7f702b9-0fb8-4d34-b2ee-7c1932299eee.png)
 ![image](https://user-images.githubusercontent.com/116340796/231769287-484f3ab9-7fc7-4415-8326-921178d34874.png)
 
+<b> Корзина <b>
+
+![image](https://user-images.githubusercontent.com/116340796/233644614-4505a11f-8814-4620-a9dc-ad1c47711247.png)
+![image](https://user-images.githubusercontent.com/116340796/233644673-896c2313-dab9-437d-9b57-4353ea63e218.png)
+
+<b> Нажали 4 раза на добавление продукта <b>
+
+![image](https://user-images.githubusercontent.com/116340796/233645040-4bd98444-f335-4e31-aa4e-433bd3cada23.png)
+
+
 
 
 
