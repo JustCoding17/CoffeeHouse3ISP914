@@ -23,6 +23,7 @@ namespace CoffeeHouse3ISP914.DB
         public int IdSale { get; set; }
         public int IdClient { get; set; }
         public int IdEmployee { get; set; }
+        public Nullable<System.DateTime> Date { get; set; }
     
         public virtual Client Client { get; set; }
         public virtual Employee Employee { get; set; }

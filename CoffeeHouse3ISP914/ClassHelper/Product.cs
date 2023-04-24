@@ -11,6 +11,6 @@ namespace CoffeeHouse3ISP914.DB
 
     public partial class Product
     {
-        public int Quantity { get; set; }
+        public int Quantity { get; set; } = 1;
     }
 }

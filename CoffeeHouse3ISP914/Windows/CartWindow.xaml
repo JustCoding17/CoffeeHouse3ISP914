@@ -77,12 +77,39 @@
                                        Margin="10 0 0 0"/>
                             <WrapPanel HorizontalAlignment="Right">
 
-                                <TextBlock Text="{Binding Quantity}"
+                                <StackPanel 
+                                    Orientation="Horizontal">
+                                    
+                                    <Button x:Name="btnMinus"
+                                    Height="28"
+                                    Width="37"
+                                    Content="-"
+                                    FontWeight="DemiBold"
+                                    Margin="0 0 0 2"
+                                    Background="{x:Null}"
+                                    FontSize="20"
+                                    BorderThickness="0"
+                                    Click="btnMinus_Click"/>
+                                    
+                                    <TextBlock x:Name="TbQuan"
+                                           Text="{Binding Quantity}"
                                            HorizontalAlignment="Center"
                                            VerticalAlignment="Center"
                                            FontSize="18"
-                                           FontWeight="Medium"
-                                           Margin="0 10 0 0"/>
+                                           FontWeight="Medium"/>
+
+                                    <Button x:Name="btnPlus"
+                                    Height="28"
+                                    Width="37"
+                                    Content="+"
+                                    FontWeight="DemiBold"
+                                    Margin="0 0 0 2"
+                                    Background="{x:Null}"
+                                    FontSize="20"
+                                    BorderThickness="0"
+                                    Click="btnPlus_Click"/>
+                                </StackPanel>
+                                
                                 
                                 <Button x:Name="btnRemoveFromCart"
                                     Height="28"
@@ -101,17 +128,18 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <!--<Button x:Name="btnAdd"
+        <Button x:Name="btnBuy"
                 Grid.Row="3"
                 Height="50"
                 Width="50"
                 HorizontalAlignment="Right"
                 Margin="0 0 10 0"
                 Background="{x:Null}"
-                BorderThickness="0">
-            <Image Source="/Resources/Picture/add.png"/>
+                BorderThickness="0"
+                Click="btnBuy_Click">
+            <Image Source="/Resources/Picture/buy.png"/>
         </Button>
-        <Button x:Name="btnEdit"
+        <!--<Button x:Name="btnEdit"
                 Grid.Row="3"
                 Height="50"
                 Width="50"

@@ -17,7 +17,7 @@ namespace CoffeeHouse3ISP914.DB
         public int IdProductSale { get; set; }
         public int IdSale { get; set; }
         public int IdProduct { get; set; }
-        public short Count { get; set; }
+        public int Count { get; set; }
     
         public virtual Product Product { get; set; }
         public virtual Sale Sale { get; set; }
