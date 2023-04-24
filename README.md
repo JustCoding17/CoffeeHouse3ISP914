@@ -79,6 +79,11 @@
 ![image](https://user-images.githubusercontent.com/116340796/233645040-4bd98444-f335-4e31-aa4e-433bd3cada23.png)
 
 
+<b> Покупка <b>
+
+![image](https://user-images.githubusercontent.com/116340796/233965474-9f623221-843a-460f-b987-a34a30931cdc.png)
+![image](https://user-images.githubusercontent.com/116340796/233965527-5378bfde-ebd2-4a68-99f9-12089b7e9549.png)
+![image](https://user-images.githubusercontent.com/116340796/233965740-2cd2d5af-1949-4f66-aa09-dd681dfa71cc.png)
 
 
 
