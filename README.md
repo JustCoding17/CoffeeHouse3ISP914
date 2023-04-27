@@ -85,6 +85,15 @@
 ![image](https://user-images.githubusercontent.com/116340796/233965527-5378bfde-ebd2-4a68-99f9-12089b7e9549.png)
 ![image](https://user-images.githubusercontent.com/116340796/233965740-2cd2d5af-1949-4f66-aa09-dd681dfa71cc.png)
 
+<b> Отчет о продажах (сортировка)<b>
+
+![image](https://user-images.githubusercontent.com/116340796/234872484-f6ce5880-dcac-429a-a2b1-ec3b40eed1b5.png)
+![image](https://user-images.githubusercontent.com/116340796/234872539-528f51b2-e252-44aa-b332-9be01b978187.png)
+<b> Диапазон дат <b>
+![image](https://user-images.githubusercontent.com/116340796/234872621-5ffad9f8-40b5-4db8-a7f9-4a01a4d683e5.png)
+
+
+
 
 
 
