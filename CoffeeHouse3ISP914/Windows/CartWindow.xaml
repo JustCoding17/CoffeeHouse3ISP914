@@ -139,6 +139,13 @@
                 Click="btnBuy_Click">
             <Image Source="/Resources/Picture/buy.png"/>
         </Button>
+        <TextBlock x:Name="TbPrice"
+                   FontSize="28"
+                   VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center"
+                   Grid.Row="3"
+                   Margin="5"
+            />
         <!--<Button x:Name="btnEdit"
                 Grid.Row="3"
                 Height="50"

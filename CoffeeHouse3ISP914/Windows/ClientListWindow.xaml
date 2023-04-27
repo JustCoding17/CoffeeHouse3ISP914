@@ -51,45 +51,48 @@
                 <DataTemplate>
                     <Border BorderBrush="#FF978A73"
                             BorderThickness="5"
-                            Margin="5"
-                            Width="255"
-                            Height="225">
-                        <StackPanel x:Name="Sp">
-
-                            <TextBlock Text="{Binding LastName}"
+                            Width="1000"
+                            Margin="75 5 0 0"
+                            CornerRadius="30 0 0 30"
+                            Height="55">
+                        <StackPanel Orientation="Horizontal">
+                            <StackPanel x:Name="Sp" Orientation="Horizontal"
+                                        VerticalAlignment="Center"
+                                        Margin="30 0 0 0">
+                                <TextBlock Text="{Binding LastName}"
                                        FontSize="18"
                                        FontWeight="Medium"
                                        Margin="5 0 0 0"
                                        TextWrapping="Wrap"/>
 
-                            <TextBlock Text="{Binding FirstName}"
+                                <TextBlock Text="{Binding FirstName}"
                                        FontSize="18"
                                        Margin="10 0 0 0"/>
-                            <!--<TextBlock Text="{Binding DateOfBirth}"
+                                <!--<TextBlock Text="{Binding DateOfBirth}"
                                        FontSize="18"
                                        Margin="10 0 0 0"
                                        TextWrapping="Wrap"/>-->
-                            <TextBlock Text="{Binding PhoneNumber}"
+                                <TextBlock Text="{Binding PhoneNumber}"
                                        FontSize="18"
                                        Margin="10 0 0 0"
                                        TextWrapping="Wrap"/>
-                            <TextBlock Text="{Binding Gender.Title}"
+                                <TextBlock Text="{Binding Gender.Title}"
                                        FontSize="18"
                                        Margin="10 0 0 0"/>
-                            <TextBlock x:Name="TxtEmail"
+                                <TextBlock x:Name="TxtEmail"
                                        Text="{Binding Email}"
                                        FontSize="18"
                                        Margin="10 0 0 0"
                                        TextWrapping="Wrap"/>
-                            <TextBlock Text="{Binding BonusCard}"
+                                <TextBlock Text="{Binding BonusCard}"
                                        FontSize="18"
                                        Margin="10 0 0 0"/>
-                            <TextBlock Text="{Binding Login}"
+                                <TextBlock Text="{Binding Login}"
                                        FontSize="18"
                                        Margin="10 0 0 0"/>
-
-
+                            </StackPanel>
                         </StackPanel>
+                        
                     </Border>
                 </DataTemplate>
             </ListView.ItemTemplate>

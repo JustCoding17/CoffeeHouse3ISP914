@@ -45,6 +45,13 @@
                     Click ="btnClient_Click"
                     Width="180"
                 />
+            <Button x:Name="btnReport"
+                    Style="{StaticResource btnStyle}"
+                    Margin="5"
+                    Content="Отчеты"
+                    Click="btnReport_Click"
+                    Width="180"
+                />
 
             <Button x:Name="btnExit"
                     Style="{StaticResource btnStyle}"

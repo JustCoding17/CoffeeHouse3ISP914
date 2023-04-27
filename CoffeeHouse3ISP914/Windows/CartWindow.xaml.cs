@@ -36,6 +36,13 @@ namespace CoffeeHouse3ISP914.Windows
         {
             ObservableCollection<Product> products = new ObservableCollection<Product>(CartClass.Products);
             LvCartList.ItemsSource = products;
+
+            decimal generalprice = 0;
+            foreach (var item in CartClass.Products)
+            {
+                generalprice += item.Price * item.Quantity;
+            }
+            TbPrice.Text = generalprice.ToString();
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
@@ -55,6 +62,7 @@ namespace CoffeeHouse3ISP914.Windows
 
             if (selectedProduct != null)
             {
+                selectedProduct.Quantity = 1;
                 CartClass.Products.Remove(selectedProduct);
 
             }
@@ -79,11 +87,14 @@ namespace CoffeeHouse3ISP914.Windows
                 productSale.IdProduct = item.IdProduct;
                 productSale.Count = item.Quantity;
                 productSale.IdSale = Context.Sale.ToList().LastOrDefault().IdSale;
+                productSale.FinalPrice = item.Price * item.Quantity;
 
                 Context.ProductSale.Add(productSale);
                 Context.SaveChanges();
             }            
-            MessageBox.Show("OKKKK");
+            MessageBox.Show("Покупка успешно осуществлена!", "Успех!");
+            CartClass.Products.Clear();
+            this.Close();
         }
 
         private void btnMinus_Click(object sender, RoutedEventArgs e)

@@ -1,0 +1,47 @@
+﻿<Window x:Class="CoffeeHouse3ISP914.Windows.ReportWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoffeeHouse3ISP914.Windows"
+        mc:Ignorable="d"
+        Title="ReportWindow" Height="400" Width="600"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.Background>
+            <RadialGradientBrush RadiusX="0.9" RadiusY="0.9">
+                <GradientStop Color="#FFDBD1BB"/>
+                <GradientStop Color="#FF978A73" Offset="1"/>
+            </RadialGradientBrush>
+        </Grid.Background>
+        <TextBlock Text="Отчеты"
+                   HorizontalAlignment="Center"
+                   FontSize="28"
+                   Margin="10"
+                   FontWeight="DemiBold"
+            />
+
+        <StackPanel HorizontalAlignment="Center"
+                    VerticalAlignment="Center">
+            <Button x:Name="btnSale"
+                    Style="{StaticResource btnStyle}"
+                    Margin="5"
+                    Content="Продажи"
+                    Click="btnSale_Click"
+                    Width="180"
+                />
+        </StackPanel>
+        <Button x:Name="btnBack"
+                Grid.Row="3"
+                Height="50"
+                Width="50"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Bottom"
+                Margin="0 0 60 0"
+                Background="{x:Null}"
+                BorderThickness="0"
+                Click="btnBack_Click">
+            <Image Source="/Resources/Picture/back.png"/>
+        </Button>
+    </Grid>
+</Window>

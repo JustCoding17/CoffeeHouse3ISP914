@@ -12,15 +12,14 @@ namespace CoffeeHouse3ISP914.DB
     using System;
     using System.Collections.Generic;
     
-    public partial class ProductSale
+    public partial class VW_InfoSale
     {
-        public int IdProductSale { get; set; }
         public int IdSale { get; set; }
+        public int IdClient { get; set; }
+        public int IdEmployee { get; set; }
+        public Nullable<System.DateTime> Date { get; set; }
         public int IdProduct { get; set; }
         public int Count { get; set; }
         public Nullable<decimal> FinalPrice { get; set; }
-    
-        public virtual Product Product { get; set; }
-        public virtual Sale Sale { get; set; }
     }
 }

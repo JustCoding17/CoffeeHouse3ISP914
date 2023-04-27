@@ -61,5 +61,12 @@ namespace CoffeeHouse3ISP914.Windows
                 this.Close();
             }
         }
+
+        private void btnReport_Click(object sender, RoutedEventArgs e)
+        {
+            ReportWindow reportWindow = new ReportWindow();
+            reportWindow.Show();
+            this.Close();
+        }
     }
 }

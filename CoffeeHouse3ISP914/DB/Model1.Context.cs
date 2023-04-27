@@ -36,6 +36,7 @@ namespace CoffeeHouse3ISP914.DB
         public virtual DbSet<ProductSale> ProductSale { get; set; }
         public virtual DbSet<Sale> Sale { get; set; }
         public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
+        public virtual DbSet<VW_InfoSale> VW_InfoSale { get; set; }
     
         public virtual int sp_alterdiagram(string diagramname, Nullable<int> owner_id, Nullable<int> version, byte[] definition)
         {

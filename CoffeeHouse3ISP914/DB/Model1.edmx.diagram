@@ -22,6 +22,7 @@
         <AssociationConnector Association="CoffeeShop3ISP914Model.FK_Sale_Employee" ManuallyRouted="false" />
         <AssociationConnector Association="CoffeeShop3ISP914Model.FK_ProductSale_Product" ManuallyRouted="false" />
         <AssociationConnector Association="CoffeeShop3ISP914Model.FK_ProductSale_Sale" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="CoffeeShop3ISP914Model.VW_InfoSale" Width="1.5" PointX="0.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

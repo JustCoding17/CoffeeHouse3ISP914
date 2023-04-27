@@ -51,10 +51,13 @@
                 <DataTemplate>
                     <Border BorderBrush="#FF978A73"
                             BorderThickness="5"
-                            Margin="5"
-                            Width="255"
-                            Height="190">
-                        <StackPanel>
+                            Width="1000"
+                            Margin="75 5 0 0"
+                            CornerRadius="30 0 0 30"
+                            Height="55">
+                        <StackPanel Orientation="Horizontal"
+                                        VerticalAlignment="Center"
+                                        Margin="30 0 0 0">
 
                             <TextBlock Text="{Binding LastName}"
                                        FontSize="18"
@@ -74,9 +77,6 @@
                             <TextBlock Text="{Binding Gender.Title}"
                                        FontSize="18"
                                        Margin="10 0 0 0"/>
-                            <!--<TextBlock Text="{Binding DateOfBirth}"
-                                       FontSize="18"
-                                       Margin="10 0 0 0"/>-->
                             <TextBlock Text="{Binding Login}"
                                        FontSize="18"
                                        Margin="10 0 0 0"/>

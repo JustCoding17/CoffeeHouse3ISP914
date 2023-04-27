@@ -42,6 +42,35 @@ namespace CoffeeHouse3ISP914.Windows
         public MenuChangeWindow(Product product)
         {
             InitializeComponent();
+
+            TxtTitle.Text = "Изменение продукта";
+            BtnAdd.Content = "Обновить";
+
+            CMBTypeProduct.ItemsSource = Context.Category.ToList();
+            CMBTypeProduct.SelectedIndex = 0;
+            CMBTypeProduct.DisplayMemberPath = "Title";
+
+            TbNameProduct.Text = product.Title.ToString();
+            TbDisc.Text = product.Description.ToString();
+            CMBTypeProduct.SelectedItem = Context.Category.Where(i => i.IdCategory == product.IdCategory).FirstOrDefault();
+            TbPrice.Text = product.Price.ToString();
+
+            if (product.PhotoPath != null)
+            {
+                using (MemoryStream stream = new MemoryStream(product.PhotoPath))
+                {
+                    BitmapImage bitmapImage = new BitmapImage();
+                    bitmapImage.BeginInit();
+                    bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
+                    bitmapImage.CreateOptions = BitmapCreateOptions.PreservePixelFormat;
+                    bitmapImage.StreamSource = stream;
+                    bitmapImage.EndInit();
+                    ImgProduct.Source = bitmapImage;
+                }
+            }
+
+            isMenuChange = true;
+            editproduct = product;
         }
         private void BtnAdd_Click(object sender, RoutedEventArgs e)
         {
@@ -69,19 +98,42 @@ namespace CoffeeHouse3ISP914.Windows
                 MessageBox.Show("Цена должна быть заполнена числами!", "Ошибка");
                 return;
             }
-            //Заполнение экземпляра класса данными
-            Product product = new Product();
-            product.Title = TbNameProduct.Text;
-            product.Description = TbDisc.Text;
-            product.Price = Convert.ToDecimal(TbPrice.Text);
-            product.IdCategory = (CMBTypeProduct.SelectedItem as Category).IdCategory;
-            if (pathPhoto != null)
+            if (isMenuChange)
             {
-                product.PhotoPath = File.ReadAllBytes(pathPhoto);
+                editproduct.Title = TbNameProduct.Text;
+                editproduct.Description = TbDisc.Text;
+                editproduct.Price = Convert.ToDecimal(TbPrice.Text);
+                editproduct.IdCategory = (CMBTypeProduct.SelectedItem as Category).IdCategory;
+                if (pathPhoto != null)
+                {
+                    editproduct.PhotoPath = File.ReadAllBytes(pathPhoto);
+                }
+                Context.SaveChanges();
+                MessageBox.Show("Товар успешно обновлен!", "Успех!", MessageBoxButton.OK, MessageBoxImage.Information);
+                MenuWindow menuWindow = new MenuWindow();
+                menuWindow.Show();
+                this.Close();
             }
-            Context.Product.Add(product);
-            Context.SaveChanges();
-            MessageBox.Show("Товар успешно добавлен");
+            else
+            {
+                //Заполнение экземпляра класса данными
+                Product product = new Product();
+                product.Title = TbNameProduct.Text;
+                product.Description = TbDisc.Text;
+                product.Price = Convert.ToDecimal(TbPrice.Text);
+                product.IdCategory = (CMBTypeProduct.SelectedItem as Category).IdCategory;
+                if (pathPhoto != null)
+                {
+                    product.PhotoPath = File.ReadAllBytes(pathPhoto);
+                }
+                Context.Product.Add(product);
+                Context.SaveChanges();
+                MessageBox.Show("Товар успешно добавлен", "Успех!", MessageBoxButton.OK, MessageBoxImage.Information);
+                MenuWindow menuWindow = new MenuWindow();
+                menuWindow.Show();
+                this.Close();
+            }
+            
         }
 
         private void BtnChooseImage_Click(object sender, RoutedEventArgs e)
