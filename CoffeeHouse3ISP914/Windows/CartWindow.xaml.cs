@@ -36,12 +36,28 @@ namespace CoffeeHouse3ISP914.Windows
         {
             ObservableCollection<Product> products = new ObservableCollection<Product>(CartClass.Products);
             LvCartList.ItemsSource = products;
-
+            PriceWithDiscount(products);
+        }
+        private void PriceWithDiscount(ObservableCollection<Product> products)
+        {
             decimal generalprice = 0;
             foreach (var item in CartClass.Products)
             {
                 generalprice += item.Price * item.Quantity;
             }
+            DateTime datetime = new DateTime();
+            datetime = DateTime.Now;
+            if (datetime.DayOfWeek == DayOfWeek.Thursday)
+            {
+                for (int i = 22; i < 28; i++)
+                {
+                    if (datetime.Day == i)
+                    {
+                        generalprice = generalprice - (generalprice * (decimal)0.04);
+                    }
+                }
+            }
+            generalprice = Math.Round(generalprice, 2);
             TbPrice.Text = generalprice.ToString();
         }
 
