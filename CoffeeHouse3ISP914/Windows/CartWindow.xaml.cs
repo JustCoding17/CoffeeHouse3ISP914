@@ -46,7 +46,7 @@ namespace CoffeeHouse3ISP914.Windows
                 generalprice += item.Price * item.Quantity;
             }
             DateTime datetime = new DateTime();
-            datetime = DateTime.Now;
+            datetime = DateTime.Now; //Сегодняшняя дата
             if (datetime.DayOfWeek == DayOfWeek.Thursday)
             {
                 for (int i = 22; i < 28; i++)
