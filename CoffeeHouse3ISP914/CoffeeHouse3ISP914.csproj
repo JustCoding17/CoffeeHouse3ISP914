@@ -64,6 +64,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassHelper\CalculatingDiscount.cs" />
     <Compile Include="ClassHelper\CartClass.cs" />
     <Compile Include="ClassHelper\Product.cs" />
     <Compile Include="ClassHelper\EFClass.cs" />
