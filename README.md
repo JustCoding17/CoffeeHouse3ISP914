@@ -98,6 +98,7 @@
 <b> Скидка 4% каждый четвертый четверг <b>
 
 <b> Если не четверг <b>
+![image](https://user-images.githubusercontent.com/116340796/236199717-d860c2ca-9855-4bf7-8444-f8e7bc16d136.png)
 
 <b> Если четверг <b>
 ![image](https://user-images.githubusercontent.com/116340796/236197671-bc0ef1d9-2287-470e-9942-cb1fa43b1f0e.png)
